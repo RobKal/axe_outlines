@@ -638,13 +638,13 @@ fill: new ol.style.Fill({
 color: 'rgba(255, 255, 255, 0.2)'
 }),
 stroke: new ol.style.Stroke({
-color: '#FF7F50',
+color: '#ff5079',
 width: 2
 }),
 image: new ol.style.Circle({
 radius: 7,
 fill: new ol.style.Fill({
-color: '#FF7F50'
+color: '#ff5079'
 })
 })
 })
@@ -880,7 +880,7 @@ var features = task.source_loop.getFeatures();
 for(i=0;i<features.length;i++) {
 task.source_loop.removeFeature(features[i]);
 }
-task.map.addInteraction(task.draw_flanges);
+task.map.addInteraction(task.draw_loop);
 task.loop = false;
 }
 
