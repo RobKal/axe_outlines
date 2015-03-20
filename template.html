@@ -982,7 +982,7 @@ for(i=0;i<features.length;i++) {
 var g = features[i].getGeometry();
 polygons.push(g.getCoordinates());
 }
-task.answer.flanges = polygons;
+task.answer.loop = polygons;
 } 
 task.answer.comments = $('#comments :input').val();
 
