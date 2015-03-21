@@ -988,7 +988,7 @@ task.answer.comments = $('#comments :input').val();
 pybossa.saveTask(task.id, task.answer).done(function() {
 $("#success").fadeIn(500).fadeOut(5500);
 deferred.resolve();
-$("#step8").hide();
+$("#step6").hide();
 $("#map_" + task.id).remove();
 });
 $("#loading").fadeIn(500);
